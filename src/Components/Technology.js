@@ -36,8 +36,8 @@ const Tech = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-direction: column;
+  width: 50%;
   // margin: 100px auto;
   margin-bottom: 0;
   color: #0099ff;
@@ -55,6 +55,18 @@ const Tech = styled.div`
       div {
         font-size: 1rem;
       }
+      @keyframes float {
+        0% {
+          transform: translatey(0px);
+        }
+        50% {
+          transform: translatey(-10px);
+        }
+        100% {
+          transform: translatey(0px);
+        }
+      }
+      animation: float 5s ease-in-out infinite;
     }
   }
 `;

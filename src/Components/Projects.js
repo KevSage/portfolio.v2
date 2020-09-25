@@ -7,6 +7,9 @@ import Pixel from "../Media/Pixel.png";
 
 import China from "../Media/China.png";
 import Engadget from "../Media/Engadget.png";
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 
 import { FaGithub, FaCodepen } from "react-icons/fa";
 const Header = styled.div`
@@ -96,7 +99,10 @@ const Projects = () => {
     <Work id="projects">
       <Header></Header>
       <h1>Projects</h1>
+      <Fade up cascade>
+
       <h3>React & Rails Projects</h3>
+
       <ProjectList>
         <Project>
           <Main>
@@ -124,7 +130,9 @@ const Projects = () => {
             </Description>
           </Main>
         </Project>
+
         <Project>
+          
           <Main>
             <h3>Who's Going</h3>
 
@@ -147,7 +155,11 @@ const Projects = () => {
             </Description>
           </Main>
         </Project>
+
           </ProjectList>
+          </Fade >
+          <Fade bottom>
+
         <h3>HTML/CSS & Vanilla JavaScript Projects</h3>
        <ProjectList>
         <Project>
@@ -198,6 +210,8 @@ const Projects = () => {
           </Main>
         </Project>
         </ProjectList>
+        </Fade>
+        <Fade bottom>
 
         <h3>HTML/CSS Sample Landing Pages</h3>
  <ProjectList>
@@ -247,6 +261,7 @@ const Projects = () => {
           </Main>
         </Project>
       </ProjectList>
+      </Fade>
     </Work>
   );
 };

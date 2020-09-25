@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Pic from "./Portfoliopic.jpeg";
-
+import Typing from "react-typing-animation"
 const Greeting = styled.div`
   display: flex;
   justify-content: center;
@@ -12,8 +12,11 @@ const Greeting = styled.div`
   height: 100vh;
   background: linear-gradient(rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0.99)),
     /* bottom, image */ url(${Pic});
+    
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: background-image 5s linear;
+
   p {
     font-family: "Poppins", sans-serif;
     color: #0099ff;
@@ -60,29 +63,42 @@ const Button = styled.button`
 
 const Main = () => {
   return (
+    
     <Greeting id="top">
+      <Typing speed={20}>
       <Intro>
+        <h2>Hi, </h2>
+        <Typing.Delay ms={1000} />
+
         <h2>My name is Kevin Sage.</h2>
+        <Typing.Delay ms={1000} />
+
         <h2>
           I specialize in <span>React</span> |{" "}
           <span>Ruby on Rails Development</span>
         </h2>
       </Intro>
       <Intro>
-        <span>Jazz Musician. </span>
-        <span>Educator. </span>
-        <span>World Traveller. </span>
-        <span>Language Enthusiast. </span>
-      </Intro>
-      {/* <Button>Holla at me!</Button> */}
+      <Typing.Delay ms={1000} />
 
-      {/* <div class="hero" id="tsparticles">
-        <div className="w wave"></div>
-        <div className="w wave2"></div>
-        <div className="w wave3"></div>
-        <div className="w wave4"></div>
-      </div> */}
+        <span>Along with being a software developer, I wear many hats. </span>
+        <Typing.Delay ms={500} />
+        <span>Jazz Musician. </span>
+        <Typing.Delay ms={500} />
+        <span>Educator. </span>
+        <Typing.Delay ms={500} />
+
+        <span>World Traveller. </span>
+        <Typing.Delay ms={500} />
+
+        <span>Language Enthusiast. </span>
+        <Typing.Delay ms={500} />
+
+        <p>Check out some of my work </p>
+      </Intro>
+      </Typing>
     </Greeting>
+
   );
 };
 export default Main;
