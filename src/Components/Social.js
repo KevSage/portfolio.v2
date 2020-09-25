@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Social_Menu = styled.div`
   font-family: "Poppins", sans-serif;
@@ -17,10 +18,14 @@ const Social_Menu = styled.div`
     li {
       padding: 5px 0;
       margin: 10px 0;
+
+      a {
+        color: #0099ff;
+      }
     }
     li:hover {
       color: #0099ff;
-      border-bottom: 2px solid royalblue;
+      border-bottom: 2px solid indigo;
       transition-timing-function: ease-in;
       cursor: pointer;
       height: fit-content;
@@ -35,13 +40,19 @@ const Social = () => {
     <Social_Menu>
       <ul>
         <li>
+          <a href="https://github.com/KevSage">
           <FaGithub />
+          </a>
         </li>
         <li>
+          <a href="http://www.linkedin.com/in/kevsage">
           <FaLinkedin />
+          </a>
         </li>
         <li>
-          <FaYoutube />
+          <a href="mailto:ksagedeveloper@gmail.com">
+          <AiOutlineMail />
+          </a>
         </li>
       </ul>
     </Social_Menu>

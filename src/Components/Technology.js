@@ -22,6 +22,14 @@ import {
   SiPostman,
   SiMaterialUi,
 } from "react-icons/si";
+
+const Banner = styled.div`
+  background-color: #0099ff;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: indigo;
+  opacity: .8;
+`
 const Header = styled.div`
   height: 80px;
 `;
@@ -32,6 +40,8 @@ const Main = styled.div`
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 0 auto;
   padding: 0 20px;
+  text-align: center;
+  background: white;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;  }
@@ -87,7 +97,7 @@ const Exp = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: left;
+  text-align: center;
   padding: 20px;
   @media only screen and (max-width: 600px) {
     width: 100%;  
@@ -107,11 +117,24 @@ const Edu = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
+    p {
+      width: 70%;
+      text-align: left;
+    }
+    h6 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+    }
   }
   img {
-    width: 150px;
+    max-width: 200px;
+    padding: 20px;
+    
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;  }
@@ -119,10 +142,13 @@ const Edu = styled.div`
 `;
 
 const Technology = () => {
+
   return (
     <>
       <Header id="skills"></Header>
-      <h1>Skills and Experience</h1>
+      <Banner>      
+        <h1>Skills and Experience</h1>
+      </Banner>
       
       <Main>
 
@@ -137,15 +163,18 @@ const Technology = () => {
         <Edu>
           <div>
             <img src={Udacity}></img>
-
             <h6>Certification: Frontend Nanodegree</h6>
-            Awards & Recognition
+
+            <p>This Nanodegree program will be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. </p>
+            <h3>Awards & Recognition</h3>
             <p>Grow With Google Scholarship Recipient</p>
           </div>
           <div>
           <img src={Flatiron}></img>
-            <h6>Certification: Full Stack Developer</h6>
-            Awards & Recognition
+          <h6>Certification: Full Stack Developer</h6>
+
+          <p>15 week Immersive on campus course where we studied  Object-oriented and Functional programming. This allowed us to create complex, functional web applications from scratch. We accomplished this by learning to build our own databases with Ruby on Rails and integrating productive, scalable front-ends with React.js. </p>
+            <h3> Awards & Recognition</h3>
             <p>Flatiron School Merit Scholar</p>
             <p>John Stanley Ford Fellowship</p>
 

@@ -12,17 +12,16 @@ const Bio = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
   color: #97d8b2;
-  font-size: 1.1rem;
   width: 80%;
-  margin-right: 100px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   img {
-    width: 250px;
-    height: 250px;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     border-radius: 100%;
   }
@@ -33,8 +32,8 @@ const Bio = styled.div`
 const Interests = styled.div`
   display: flex;
   flex-direction: row;
-  background: white;
-  border-radius: 20px;
+  background: #F6F6F6;
+  // border-radius: 20px;
   color: #0099ff;
   h3 {
     color: black;
@@ -43,6 +42,10 @@ const Interests = styled.div`
     padding: 30px;
     font-size: 1rem;
   }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
  
 `;
 const Music = styled.div`
@@ -50,6 +53,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 border: 1px solid indigo;
+margin: 10px;
 
   padding: 2%;
   img {
@@ -59,6 +63,10 @@ border: 1px solid indigo;
     filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  
   }
 
+  &:hover {
+    background: white;
+  }
+
 `;
 const Travel = styled.div`
   padding: 2%;
@@ -66,13 +74,17 @@ const Travel = styled.div`
   flex-direction: column;
   justify-content: center;
   border: 1px solid indigo;
+  margin: 10px;
 
   img {
     height: 7rem;
     width: 7rem;
     margin: 0 auto;
-    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  }
-
+    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  
+  }
+  &:hover {
+    background: white;
+  }
 `;
 const Code = styled.div`
   padding: 2%;
@@ -81,19 +93,23 @@ const Code = styled.div`
   flex-direction: column;
   justify-content: center;
   border: 1px solid indigo;
-
+  margin: 10px;
   img {
     height: 5rem;
     width: 5rem;
     margin: 0 auto;
-    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  }
-
+    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  
+  }
+  &:hover {
+    background: white;
+  }
 `;
 const About = () => {
   return (
     <>
-      <Header id="about"></Header>
       <div className="hero">
+      <Header id="about"></Header>
+
         <Bio>
           <img src={Pic}></img>
           <h2>ABOUT KEVIN</h2>

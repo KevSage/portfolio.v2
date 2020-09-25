@@ -38,8 +38,14 @@ const Menu_Items = styled.div`
 
   li {
     padding: 20px 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
+  }
+
+  @media only screen and (max-width: 600px) {
+    li {
+      display: none
+    }
   }
   li:hover {
     color: #0099ff;
@@ -65,17 +71,7 @@ const Navbar = () => {
       </Logo>
       <Menu>
         <Menu_Items>
-          <li>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-            >
-              About Me
-            </Link>
-          </li>
+          
           <li>
             <Link
               activeClass="active"
@@ -101,14 +97,15 @@ const Navbar = () => {
           <li>
             <Link
               activeClass="active"
-              to="resume"
+              to="about"
               spy={true}
               smooth={true}
               duration={1000}
             >
-              Resume
+              About Me
             </Link>
           </li>
+          
         </Menu_Items>
       </Menu>
     </Nav>

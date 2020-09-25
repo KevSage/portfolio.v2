@@ -27,6 +27,7 @@ const Greeting = styled.div`
     span {
       color: #0099ff;
     }
+    font-size: 1.4rem;
   }
 `;
 const Intro = styled.div`
@@ -35,14 +36,19 @@ const Intro = styled.div`
   font-family: "Poppins", sans-serif;
   color: #97d8b2;
   // margin: 10px auto;
-  font-size: 1.1rem;
-  width: 40%;
+  font-size: 1rem;
+  width: 50%;
   span {
     color: #0099ff;
+    font-size: 1.5rem;
+
   }
   p {
     font-family: "Poppins", sans-serif;
     color: #97d8b2;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 80%;
   }
 `;
 const Button = styled.button`
@@ -81,7 +87,6 @@ const Main = () => {
       <Intro>
       <Typing.Delay ms={1000} />
 
-        <span>Along with being a software developer, I wear many hats. </span>
         <Typing.Delay ms={500} />
         <span>Jazz Musician. </span>
         <Typing.Delay ms={500} />

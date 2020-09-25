@@ -7,7 +7,6 @@ import "./App.css";
 import Technology from "./Components/Technology";
 import Wave from "./Components/Wave";
 import About from "./Components/About";
-import Wave2 from "./Components/Wave2";
 function App() {
   return (
     <div className="App">
@@ -17,7 +16,9 @@ function App() {
       <Wave />
       <Technology />
       <Projects />
+
       <About />
+
     </div>
   );
 }
