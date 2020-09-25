@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Pic from "../Media/avatar.JPG";
 import Jazz from "../Media/jazz.png";
-import China from "../Media/chinasvg.png";
+import China from "../Media/hanzi.svg";
 import Coding from "../Media/code.png";
 
 const Header = styled.div`
@@ -21,8 +21,8 @@ const Bio = styled.div`
   align-items: center;
 
   img {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     text-align: center;
     border-radius: 100%;
   }
@@ -33,35 +33,61 @@ const Bio = styled.div`
 const Interests = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  background: white;
+  border-radius: 20px;
+  color: #0099ff;
+  h3 {
+    color: black;
+  }
+  q {
+    padding: 30px;
+    font-size: 1rem;
+  }
+ 
 `;
 const Music = styled.div`
-  margin: 1%;
-  padding: 5%;
-  background: linear-gradient(rgba(75, 0, 130, 0.95), rgba(75, 0, 130, 0.8)),
-    url(${Jazz});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 1px solid indigo;
+
+  padding: 2%;
+  img {
+    height: 7rem;
+    width: 6rem;
+    margin: 0 auto;
+    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  
+  }
+
 `;
 const Travel = styled.div`
-  margin: 1%;
-  padding: 5%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid indigo;
 
-  background: linear-gradient(rgba(75, 0, 130, 0.95), rgba(75, 0, 130, 0.8)),
-    url(${China});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  img {
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  }
+
 `;
 const Code = styled.div`
-  margin: 1%;
-  padding: 5%;
-  background: linear-gradient(rgba(75, 0, 130, 0.95), rgba(75, 0, 130, 0.8)),
-    url(${Coding});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid indigo;
+
+  img {
+    height: 5rem;
+    width: 5rem;
+    margin: 0 auto;
+    filter: invert(44%) sepia(99%) saturate(2739%) hue-rotate(182deg) brightness(102%) contrast(107%);  }
+
 `;
 const About = () => {
   return (
@@ -76,24 +102,38 @@ const About = () => {
             astute understanding of the functionality and application of
             Language. Syntax, pattern recognition and process, skills that I've
             acquired from life experience translates exceptionally well to
-            writing code.
+            writing code. 
+            <p> Here are some of the languages I speak.</p>
           </p>
           <Interests>
             <Music>
-              {/* <img src={Jazz}></img> */}
-              Originally from Tampa, FL. Attended Florida State University
-              before relocating to Dalian China. Worked as an English Teacher,
-              Saxophonist and Clinician.{" "}
+              <img src={Jazz}></img>
+              <h3>Music</h3>
+              
+              <q>Jazz improvisation activates the same areas of the brain typically associated with spoken language — specifically, regions that help people interpret syntax or the structure of language.</q>
+             
+              <p>I'm a jazz musician. I attended the prestigious Blake School of the Arts in Tampa, FL, which granted me a scholarship to attend Flordia State University's Jazz Program.
+              </p>
+              
             </Music>
             <Travel>
-              Originally from Tampa, FL. Attended Florida State University
-              before relocating to Dalian China. Worked as an English Teacher,
-              Saxophonist and Clinician.{" "}
+            <img src={China}></img>
+            <h3>Chinese</h3>
+              <q>Chinese is one of the hardest languages to learn for native English speakers. 
+
+              The language consists of tens of thousands of characters that make ultimate fluency a daunting task. 
+              </q>
+              <p>
+              While In China, I worked as an in demand session and performing saxophonist. I've appeared in Chinese film, television and magazines. 
+              In 2014, I opened a music academy teaching jazz and English to dozens of students.               </p>
             </Travel>
             <Code>
-              Originally from Tampa, FL. Attended Florida State University
-              before relocating to Dalian China. Worked as an English Teacher,
-              Saxophonist and Clinician.{" "}
+            <img src={Coding}></img>
+            <h3>Code</h3>
+            <q>Like human languages, computer code has a structure, vocabulary and rules that make it work.</q>
+            <p>
+              After a year of independent self study, in 2018 I was awarded a scholarship in the Grow with Google program, which granted me a Frontend Nanodegree. In 2019, I relocated to Atlanta, Ga to attend the Flatiron School Full Stack Development Program.</p>
+              
             </Code>
           </Interests>
         </Bio>

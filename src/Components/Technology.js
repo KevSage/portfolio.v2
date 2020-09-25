@@ -27,28 +27,31 @@ const Header = styled.div`
 `;
 const Main = styled.div`
   display: flex;
-  // flex-direction: row;
+  flex-direction: column;
   width: 80%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;  }
 `;
 const Tech = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  // margin: 100px auto;
+  width: 100%;
   margin-bottom: 0;
   color: #0099ff;
   ul {
     display: flex;
     flex-wrap: wrap;
-    font-size: 2.9rem;
+    font-size: 2rem;
     list-style-type: none;
     flex-direction: row;
     margin: 10px;
-
+    justify-content: center;
     li {
       padding: 15px;
       color: #0099ff;
@@ -83,9 +86,13 @@ const Backend = styled.div`
 const Exp = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   text-align: left;
   padding: 20px;
+  @media only screen and (max-width: 600px) {
+    width: 100%;  
+    text-align: center;
+  }
 `;
 
 const Skills = styled.div`
@@ -95,11 +102,19 @@ justify-content: flex-start;
 `
 const Edu = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  div {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
   img {
     width: 150px;
   }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;  }
 
 `;
 
@@ -117,8 +132,9 @@ const Technology = () => {
           <Skills>
           Experienced in Ruby on Rails and JavaScript/React based programming. Possesses strong skills in frontend ui development and backend database management.
           </Skills>
-        <Edu>
           <h3>Education</h3>
+
+        <Edu>
           <div>
             <img src={Udacity}></img>
 

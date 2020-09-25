@@ -15,7 +15,7 @@ const Greeting = styled.div`
     
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: background-image 5s linear;
+  background-position: left 30% top;
 
   p {
     font-family: "Poppins", sans-serif;

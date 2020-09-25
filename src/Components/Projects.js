@@ -32,8 +32,9 @@ const ProjectList = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  // align-items: left;
-`;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }`;
 const Project = styled.div`
   margin: 10px 10px;
   display: flex;
@@ -41,7 +42,13 @@ const Project = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
   h3 {
     font-family: "Poppins", sans-serif;
     color: #97d8b2;
@@ -50,7 +57,7 @@ const Project = styled.div`
   }
   img {
     width: 100%;
-    height: 330px;
+    // height: 530px;
   }
 `;
 

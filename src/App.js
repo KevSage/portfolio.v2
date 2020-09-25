@@ -17,7 +17,6 @@ function App() {
       <Wave />
       <Technology />
       <Projects />
-      {/* <Wave2 /> */}
       <About />
     </div>
   );

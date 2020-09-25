@@ -26,6 +26,9 @@ const Social_Menu = styled.div`
       height: fit-content;
     }
   }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 const Social = () => {
   return (
