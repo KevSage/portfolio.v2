@@ -179,8 +179,7 @@ const Projects = () => {
             <h3>Who's Going</h3>
             <Description>
             <p>Festival & Artist Database where users can follow their favorite artists and festivals. Built on a Rails database and Vanilla Javascript.</p>
-             <p> Ruby on Rails | Semantic UI | JavaScript |JWToken | OAuth |
-              Google Translate API</p>
+             <p> Ruby on Rails | Semantic UI | JavaScript |JWToken | OAuth </p>
             </Description>
             <Left>
               <img className="project_img" src={Festivalz}></img>

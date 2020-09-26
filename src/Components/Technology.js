@@ -54,6 +54,7 @@ const Tech = styled.div`
   width: 100%;
   margin-bottom: 0;
   color: #0099ff;
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -62,6 +63,7 @@ const Tech = styled.div`
     flex-direction: row;
     margin: 10px;
     justify-content: center;
+    padding: 0;
     li {
       padding: 15px;
       color: #0099ff;
@@ -99,6 +101,13 @@ const Exp = styled.div`
   width: 100%;
   text-align: center;
   padding: 20px;
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    margin: 30px 0 10px;
+  }
   @media only screen and (max-width: 600px) {
     width: 100%;  
     text-align: center;
@@ -109,10 +118,12 @@ const Skills = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
+
 `
 const Edu = styled.div`
   display: flex;
   flex-direction: row;
+  
   div {
     margin: 0 auto;
     display: flex;
@@ -120,7 +131,7 @@ const Edu = styled.div`
     align-items: flex-start;
     width: 50%;
     p {
-      width: 70%;
+      width: 90%;
       text-align: left;
     }
     h6 {
@@ -129,6 +140,18 @@ const Edu = styled.div`
     }
     h3 {
       margin: 0;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      h3  {
+        font-size 1em;
+      }
+      h6  {
+        font-size 1em;
+      }
     }
   }
   img {
@@ -165,7 +188,7 @@ const Technology = () => {
             <img src={Udacity}></img>
             <h6>Certification: Frontend Nanodegree</h6>
 
-            <p>This Nanodegree program will be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. </p>
+            <p>4 month Nanodegree program that teaches students to be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. </p>
             <h3>Awards & Recognition</h3>
             <p>Grow With Google Scholarship Recipient</p>
           </div>
