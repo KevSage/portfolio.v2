@@ -59,6 +59,7 @@ const Project = styled.div`
     font-size: 2rem;
     margin 0;
     text-decoration: underline;
+    padding-left: 20px;
   }
   img {
     width: 100%;

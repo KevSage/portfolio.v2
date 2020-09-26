@@ -26,7 +26,7 @@ const Bio = styled.div`
     border-radius: 100%;
   }
   p {
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
 `;
 const Interests = styled.div`
