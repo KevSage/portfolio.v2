@@ -39,7 +39,7 @@ const Project = styled.div`
   margin: 10px 10px;
   display: flex;
   width: 40%;
-  padding: 60px;
+  // padding: 60px;
   flex-direction: row;
   flex-wrap: wrap;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -87,7 +87,7 @@ const Left = styled.div`
 
 const Button = styled.button`
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: transparent;
   border-radius: 3px;
   border: 2px solid indigo;
@@ -112,7 +112,7 @@ const Button = styled.button`
   }
 `;
 const Description = styled.div`
-  width: 100%;
+  // width: 100%;
   padding: 20px;
   text-align: left;
   //   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");

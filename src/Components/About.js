@@ -26,7 +26,7 @@ const Bio = styled.div`
     border-radius: 100%;
   }
   p {
-    font-size: 1.3rem;
+    font-size: .8rem;
   }
 `;
 const Interests = styled.div`
@@ -40,7 +40,7 @@ const Interests = styled.div`
   }
   q {
     padding: 30px;
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
   @media only screen and (max-width: 1024px) {
@@ -130,6 +130,8 @@ const About = () => {
              
               <p>I'm a jazz musician. I attended the prestigious Blake School of the Arts in Tampa, FL, which granted me a scholarship to attend Flordia State University's Jazz Program.
               </p>
+
+              <a href="https://www.youtube.com/watch?v=34P70IKBcLo"> Check Me out!</a>
               
             </Music>
             <Travel>
