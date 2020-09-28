@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Pic from "./Portfoliopic.jpeg";
+import Pic from "../Media/Portfoliopic.jpeg";
 import Typing from "react-typing-animation"
 const Greeting = styled.div`
   display: flex;
@@ -16,6 +16,7 @@ const Greeting = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 30% top;
+  // background-attachment: fixed;
 
   p {
     font-family: "Poppins", sans-serif;
