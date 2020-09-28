@@ -142,7 +142,7 @@ const About = () => {
               The language consists of tens of thousands of characters that make ultimate fluency a daunting task. 
               </q>
               <p>
-              While In China, I worked as an in demand session and performing saxophonist. I've appeared in Chinese film, television and magazines. 
+              In 2008, I relocated to th People's Republic of China. While In China, I worked as an in demand session and performing saxophonist. I've appeared in Chinese film, television and magazines. 
               In 2014, I opened a music academy teaching jazz and English to dozens of students.               </p>
             </Travel>
             <Code>
