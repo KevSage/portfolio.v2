@@ -32,6 +32,11 @@ const ProjectList = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  h3 {
+    text-decoration: underline;
+    text-align: center;
+  }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }`;
@@ -39,7 +44,6 @@ const Project = styled.div`
   margin: 10px 10px;
   display: flex;
   width: 40%;
-  // padding: 60px;
   flex-direction: row;
   flex-wrap: wrap;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -58,12 +62,10 @@ const Project = styled.div`
     color: indigo;
     font-size: 2rem;
     margin 0;
-    text-decoration: underline;
     padding-left: 20px;
   }
   img {
     width: 100%;
-    // height: 530px;
     border-radius: 10px;
   }
 `;
@@ -118,10 +120,10 @@ const Description = styled.div`
   text-align: left;
   //   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
+  
   p {
-    text-decoration: none
+    font-size: 1rem;
   }
- 
 `;
 
 const Banner = styled.div`
@@ -134,11 +136,11 @@ const Banner = styled.div`
 
 const Projects = () => {
   return (
-    <Work id="projects">
+    <Work classname="projects">
       <Header></Header>
 
       <Banner>
-        <h1 id="projects">Projects</h1>
+        <h1 classname="projects">Projects</h1>
       </Banner>
       <Fade up cascade>
 
@@ -147,7 +149,7 @@ const Projects = () => {
       <ProjectList>
         <Project>
           <Main>
-            <h3>Tongue.io</h3>
+            <h3 classname="projects">Tongue.io</h3>
             <Description>
               <p>Tongue.io was my capstone project at Flatiron. It is a Language phrasebook and language translation program built on a Rails Backend and React.js frontend with redux for state management.</p>
              <p> Ruby on Rails | React.js | Redux | Material UI | JWToken | OAuth |
@@ -181,7 +183,7 @@ const Projects = () => {
         <Project>
           
           <Main>
-            <h3>Who's Going</h3>
+            <h3 classname="projects">Who's Going</h3>
             <Description>
             <p>Festival & Artist Database where users can follow their favorite artists and festivals. Built on a Rails database and Vanilla Javascript.</p>
              <p> Ruby on Rails | Semantic UI | JavaScript |JWToken | OAuth </p>
@@ -212,9 +214,9 @@ const Projects = () => {
         <Project>
           <Main>
             
-            <h3>Memory Match - Dev Edition</h3>
+            <h3 classname="projects">Memory Match - Dev Edition</h3>
             <Description>
-              Classic Memory Game. Match the web technologies in record time.
+              <p>Classic Memory Game. Match the web technologies in record time.</p>
               <p>HTML | CSS | Vanilla JavaScript</p>
             </Description>
             <Left>
@@ -235,9 +237,9 @@ const Projects = () => {
         </Project>
         <Project>
           <Main>
-            <h3>Pixel Art Maker</h3>
+            <h3 classname="projects">Pixel Art Maker</h3>
             <Description>
-              Create your very own work of art by building a custom grid and filling in the pixels with your design. Don't forget to print your masterpiece when finished.
+             <p> Create your very own work of art by building a custom grid and filling in the pixels with your design. Don't forget to print your masterpiece when finished.</p>
 
               <p>HTML | CSS | Vanilla JavaScript</p>
 
@@ -261,7 +263,7 @@ const Projects = () => {
         </Fade>
         <Fade bottom>
 
-        <h3>HTML/CSS Sample Landing Pages</h3>
+        <h3 classname="projects">HTML/CSS Sample Landing Pages</h3>
  <ProjectList>
         <Project>
           
@@ -289,7 +291,7 @@ const Projects = () => {
         </Project>
         <Project>
           <Main>
-            <h3>Engadget Clone</h3>
+            <h3 classname="projects">Engadget Clone</h3>
             <Description>
             <p>Techniq is a landing page for a technology site based on Engadget </p>
              <p> HTML| CSS | JavaScript | Bootstrap </p>

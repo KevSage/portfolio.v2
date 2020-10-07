@@ -21,6 +21,9 @@ import {
   SiReactrouter,
   SiPostman,
   SiMaterialUi,
+  SiFirebase,
+  SiNodeDotJs
+
 } from "react-icons/si";
 
 const Banner = styled.div`
@@ -284,6 +287,14 @@ const Technology = () => {
               <li>
                 <SiGithub style={{color: "black"}}/>
                 <div>Github</div>
+              </li>
+              <li>
+                <SiFirebase style={{color: "red"}}/>
+                <div>Firebase</div>
+              </li>
+              <li>
+                <SiNodeDotJs style={{color: "forestgreen"}}/>
+                <div>Node.js</div>
               </li>
             </ul>
           </Backend>

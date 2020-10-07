@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
 
 const Social_Menu = styled.div`
   font-family: "Poppins", sans-serif;
@@ -52,6 +52,11 @@ const Social = () => {
         <li>
           <a href="mailto:ksagedeveloper@gmail.com">
           <AiOutlineMail />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:ksagedeveloper@gmail.com">
+          <AiOutlineTwitter />
           </a>
         </li>
       </ul>

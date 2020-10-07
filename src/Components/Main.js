@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Pic from "../Media/Portfoliopic.jpeg";
-import Typing from "react-typing-animation"
+import Typing from "react-typing-animation";
+import { Link } from "react-scroll";
+
 const Greeting = styled.div`
   display: flex;
   justify-content: center;
@@ -24,11 +26,11 @@ const Greeting = styled.div`
   }
   h2 {
     font-family: "Poppins", sans-serif;
-    color: #97d8b2;
+    color: white;
     span {
       color: #0099ff;
     }
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 `;
 const Intro = styled.div`
@@ -46,7 +48,7 @@ const Intro = styled.div`
   }
   p {
     font-family: "Poppins", sans-serif;
-    color: #97d8b2;
+    color: white;
   }
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -68,6 +70,16 @@ const Button = styled.button`
   }
 `;
 
+const WorkContainer = styled.div`
+  display: block;
+  margin-top: 30px;
+`
+
+const workLink = {
+  "font-size": "1.5em",
+  "color": "white"
+}
+
 const Main = () => {
   return (
     
@@ -77,7 +89,7 @@ const Main = () => {
         <h2>Hi, </h2>
         <Typing.Delay ms={1000} />
 
-        <h2>My name is Kevin Sage.</h2>
+        <h2>My name is <span>Kevin Sage.</span></h2>
         <Typing.Delay ms={1000} />
 
         <h2>
@@ -98,9 +110,18 @@ const Main = () => {
         <Typing.Delay ms={500} />
 
         <span>Language Enthusiast. </span>
-        <Typing.Delay ms={500} />
-
-        <p>Check out some of my work </p>
+        <WorkContainer>
+        <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              style={workLink}
+            >
+              Check out some of my work
+          </Link>
+          </WorkContainer>
       </Intro>
       </Typing>
     </Greeting>
