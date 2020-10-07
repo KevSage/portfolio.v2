@@ -24,6 +24,12 @@ const Work = styled.div`
   flex-direction: column;
   margin: 0 auto;
   flex-wrap: wrap;
+
+  h3 {
+    padding: 40px;
+    font-size: 2rem;
+    color: #0099ff;
+  }
 `;
 const ProjectList = styled.div`
   width: 100%;
@@ -36,6 +42,7 @@ const ProjectList = styled.div`
   h3 {
     text-decoration: underline;
     text-align: center;
+   
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -127,7 +134,6 @@ const Description = styled.div`
 `;
 
 const Banner = styled.div`
-  background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   color: indigo;
@@ -137,7 +143,7 @@ const Banner = styled.div`
 const Projects = () => {
   return (
     <Work classname="projects">
-      <Header></Header>
+      <Header id="projects"></Header>
 
       <Banner>
         <h1 classname="projects">Projects</h1>
@@ -146,10 +152,10 @@ const Projects = () => {
 
       <h3>React & Rails Projects</h3>
 
-      <ProjectList>
+      <ProjectList >
         <Project>
           <Main>
-            <h3 classname="projects">Tongue.io</h3>
+            <h3 classname="projects" >Tongue.io</h3>
             <Description>
               <p>Tongue.io was my capstone project at Flatiron. It is a Language phrasebook and language translation program built on a Rails Backend and React.js frontend with redux for state management.</p>
              <p> Ruby on Rails | React.js | Redux | Material UI | JWToken | OAuth |

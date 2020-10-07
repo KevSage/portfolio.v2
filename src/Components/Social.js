@@ -55,7 +55,7 @@ const Social = () => {
           </a>
         </li>
         <li>
-          <a href="mailto:ksagedeveloper@gmail.com">
+          <a href="https://twitter.com/Kev__Sage">
           <AiOutlineTwitter />
           </a>
         </li>

@@ -27,7 +27,6 @@ import {
 } from "react-icons/si";
 
 const Banner = styled.div`
-  background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   color: indigo;
@@ -39,7 +38,6 @@ const Banner = styled.div`
 `
 const Header = styled.div`
   height: 80px;
-  background-color: white;
 `;
 const Main = styled.div`
   display: flex;
