@@ -118,10 +118,14 @@ const Description = styled.div`
   text-align: left;
   //   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
   font-family: "Poppins", sans-serif;
+  p {
+    text-decoration: none
+  }
+ 
 `;
 
 const Banner = styled.div`
-  background-color: #0099ff;
+  background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   color: indigo;
@@ -134,7 +138,7 @@ const Projects = () => {
       <Header></Header>
 
       <Banner>
-        <h1>Projects</h1>
+        <h1 id="projects">Projects</h1>
       </Banner>
       <Fade up cascade>
 

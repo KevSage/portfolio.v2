@@ -24,14 +24,19 @@ import {
 } from "react-icons/si";
 
 const Banner = styled.div`
-  background-color: #0099ff;
+  background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   color: indigo;
   opacity: .8;
+
+  h1 {
+    text-decoration: underline;
+  }
 `
 const Header = styled.div`
   height: 80px;
+  background-color: white;
 `;
 const Main = styled.div`
   display: flex;

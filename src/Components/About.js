@@ -33,7 +33,7 @@ const Interests = styled.div`
   display: flex;
   flex-direction: row;
   background: #F6F6F6;
-  // border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: #0099ff;
   h3 {
     color: black;
@@ -52,7 +52,7 @@ const Music = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-border: 1px solid indigo;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 margin: 10px;
 
   padding: 2%;
@@ -73,7 +73,7 @@ const Travel = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid indigo;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 10px;
 
   img {
@@ -92,7 +92,7 @@ const Code = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid indigo;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 10px;
   img {
     height: 5rem;
