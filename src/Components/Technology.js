@@ -193,10 +193,11 @@ const Technology = () => {
           <div>
             <img src={Udacity}></img>
             <h6>Certification: Frontend Nanodegree</h6>
-
             <p>4 month Nanodegree program that teaches students to be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. </p>
             <h3>Awards & Recognition</h3>
             <p>Grow With Google Scholarship Recipient</p>
+            <h6>Currently Enrolled: Cloud Developer</h6>
+            <p>Cloud development and deployment with AWS, microservices, Kubernetes clusters, and serverless application technology.</p>            
           </div>
           <div>
           <img src={Flatiron}></img>
