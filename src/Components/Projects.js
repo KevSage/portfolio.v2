@@ -4,6 +4,7 @@ import Tongue from "../Media/Tongue.png";
 import Festivalz from "../Media/Festivalz.png";
 import Memory from "../Media/Memory.png";
 import Pixel from "../Media/Pixel.png";
+import Covid from "../Media/Covid.png";
 
 import China from "../Media/China.png";
 import Engadget from "../Media/Engadget.png";
@@ -175,6 +176,37 @@ const Projects = () => {
                 <Button>
                   <a
                     href="https://www.youtube.com/watch?v=-tKELO7anCM"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </Button>
+              </div>
+            </Left>
+           
+          </Main>
+        </Project>
+        <Project>
+          <Main>
+            <h3 classname="projects" >Covid-19 Tracker</h3>
+            <Description>
+              <p>This is a simple coronavirus tracker that keeps up with new coronavirus infections worldwide. New cases, recoveries and deaths are documented along with a bar graph showing coronavirus spread over time.</p>
+             <p> React.js | Open Disease DB API | React Leaflet Maps | React ChartJS</p>
+            </Description>
+            <Left>
+              <img className="project_img" src={Covid}></img>
+              <div>
+              <Button>
+                <a
+                    href="https://github.com/KevSage/Covid19-Tracker"
+                    target="_blank"
+                  >
+                  <FaGithub />
+                  </a>
+                </Button>
+                <Button>
+                  <a
+                    href="https://dazzling-khorana-b4e96d.netlify.app/"
                     target="_blank"
                   >
                     Demo
