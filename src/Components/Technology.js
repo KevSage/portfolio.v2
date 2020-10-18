@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Udacity from "../Media/Udacity.svg.png"
-import Flatiron from "../Media/Flatiron.png"
+import Udacity from "../Media/Udacity.svg.png";
+import Flatiron from "../Media/Flatiron.png";
 
 import { AiOutlineHtml5 } from "react-icons/ai";
 import {
@@ -22,20 +22,20 @@ import {
   SiPostman,
   SiMaterialUi,
   SiFirebase,
-  SiNodeDotJs
-
+  SiNodeDotJs,
+  SiMongodb,
 } from "react-icons/si";
 
 const Banner = styled.div`
   padding: 10px;
   margin-bottom: 20px;
   color: indigo;
-  opacity: .8;
+  opacity: 0.8;
 
   h1 {
     text-decoration: underline;
   }
-`
+`;
 const Header = styled.div`
   height: 80px;
 `;
@@ -50,7 +50,8 @@ const Main = styled.div`
   background: white;
 
   @media only screen and (max-width: 600px) {
-    flex-direction: column;  }
+    flex-direction: column;
+  }
 `;
 const Tech = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
@@ -115,17 +116,16 @@ const Exp = styled.div`
     margin: 30px 0 10px;
   }
   @media only screen and (max-width: 600px) {
-    width: 100%;  
+    width: 100%;
     text-align: center;
   }
 `;
 
 const Skills = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-
-`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`;
 const Edu = styled.div`
   display: flex;
   flex-direction: row;
@@ -134,18 +134,18 @@ const Edu = styled.div`
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
+    width: 45%;
+    justify-content: center
+    margin: 10px;
     p {
-      width: 90%;
-      text-align: left;
+     
     }
     h6 {
       font-size: 1.5em;
-      margin: 0;
-    }
+      margin-bottom: 20px;
     h3 {
-      margin: 0;
+      // width: 90%;
+
     }
     
     @media only screen and (max-width: 600px) {
@@ -163,7 +163,7 @@ const Edu = styled.div`
   img {
     max-width: 200px;
     padding: 20px;
-    
+    margin: 0 auto;
   }
   @media only screen and (max-width: 600px) {
     flex-direction: column;  }
@@ -171,47 +171,60 @@ const Edu = styled.div`
 `;
 
 const Technology = () => {
-
   return (
     <>
       <Header id="skills"></Header>
-      <Banner>      
+      <Banner>
         <h1>Skills and Experience</h1>
       </Banner>
-      
-      <Main>
 
-      <Exp>
-      <h4>My Skillset</h4>
+      <Main>
+        <Exp>
+          <h4>My Skillset</h4>
 
           <Skills>
-          Experienced in Ruby on Rails and JavaScript/React based programming. Possesses strong skills in frontend ui development and backend database management.
+            Experienced in Ruby on Rails and JavaScript/React based programming.
+            Possesses strong skills in frontend ui development and backend
+            database management.
           </Skills>
           <h3>Education</h3>
 
-        <Edu>
-          <div>
-            <img src={Udacity}></img>
-            <h6>Certification: Frontend Nanodegree</h6>
-            <p>4 month Nanodegree program that teaches students to be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. </p>
-            <h3>Awards & Recognition</h3>
-            <p>Grow With Google Scholarship Recipient</p>
-            <h6>Currently Enrolled: Cloud Developer</h6>
-            <p>Cloud development and deployment with AWS, microservices, Kubernetes clusters, and serverless application technology.</p>            
-          </div>
-          <div>
-          <img src={Flatiron}></img>
-          <h6>Certification: Full Stack Developer</h6>
+          <Edu>
+            <div>
+              <img src={Udacity}></img>
+              <h6>Certification: Frontend Nanodegree</h6>
+              <p>
+                4 month Nanodegree program that teaches students to be able to
+                construct responsive websites using CSS, Flexbox and CSS Grid,
+                develop interactive websites and UI (User Interface)
+                applications using JavaScript and HTML, and connect a web
+                application to backend server data using JavaScript.{" "}
+              </p>
+              <h3>Awards & Recognition</h3>
+              <p>Grow With Google Scholarship Recipient</p>
+              <h6>Currently Enrolled: Cloud Developer</h6>
+              <p>
+                Cloud development and deployment with AWS, microservices,
+                Kubernetes clusters, and serverless application technology.
+              </p>
+            </div>
+            <div>
+              <img src={Flatiron}></img>
+              <h6>Certification: Full Stack Developer</h6>
 
-          <p>15 week Immersive on campus course where we studied  Object-oriented and Functional programming. This allowed us to create complex, functional web applications from scratch. We accomplished this by learning to build our own databases with Ruby on Rails and integrating productive, scalable front-ends with React.js. </p>
-            <h3> Awards & Recognition</h3>
-            <p>Flatiron School Merit Scholar</p>
-            <p>John Stanley Ford Fellowship</p>
-
-          </div>
-          
-
-        </Edu>
+              <p>
+                15 week Immersive on campus course where we studied
+                Object-oriented and Functional programming. This allowed us to
+                create complex, functional web applications from scratch. We
+                accomplished this by learning to build our own databases with
+                Ruby on Rails and integrating productive, scalable front-ends
+                with React.js.{" "}
+              </p>
+              <h3> Awards & Recognition</h3>
+              <p>Flatiron School Merit Scholar</p>
+              <p>John Stanley Ford Fellowship</p>
+            </div>
+          </Edu>
         </Exp>
         <Tech>
           <Frontend>
@@ -222,11 +235,11 @@ const Technology = () => {
                 <div>HTML5</div>
               </li>
               <li>
-                <SiCsswizardry style={{color: "#F28F3B"}}/>
+                <SiCsswizardry style={{ color: "#F28F3B" }} />
                 <div>CSS</div>
               </li>
               <li>
-                <SiJavascript style={{color: "forestgreen"}}/>
+                <SiJavascript style={{ color: "forestgreen" }} />
                 <div>JavaScript</div>
               </li>
               <li>
@@ -234,27 +247,27 @@ const Technology = () => {
                 <div>React.JS</div>
               </li>
               <li>
-                <SiBootstrap style={{color: "indigo"}}/>
+                <SiBootstrap style={{ color: "indigo" }} />
                 <div>Bootstrap </div>
               </li>
               <li>
-                <SiMaterialUi style={{color: "royalblue"}}/>
+                <SiMaterialUi style={{ color: "royalblue" }} />
                 <div>MaterialUI</div>
               </li>
               <li>
-                <SiJest style={{color: "#944158"}}/>
+                <SiJest style={{ color: "#944158" }} />
                 <div>Jest</div>
               </li>
               <li>
-                <SiJquery style={{color: "#193453"}}/>
+                <SiJquery style={{ color: "#193453" }} />
                 <div>JQuery</div>
               </li>
               <li>
-                <SiRedux style={{color: "#7D43BE"}}/>
+                <SiRedux style={{ color: "#7D43BE" }} />
                 <div>Redux</div>
               </li>
               <li>
-                <SiReactrouter style={{color: "#F14648"}}/>
+                <SiReactrouter style={{ color: "#F14648" }} />
                 <div>React Router</div>
               </li>
             </ul>
@@ -264,41 +277,44 @@ const Technology = () => {
             <h3>Backend</h3>
             <ul>
               <li>
-                <SiRuby style={{color: "#E51721"}}/>
+                <SiRuby style={{ color: "#E51721" }} />
                 <div>Ruby</div>
               </li>
               <li>
-                <SiRails style={{color: "#E51721"}}/>
+                <SiRails style={{ color: "#E51721" }} />
                 <div>Rails</div>
               </li>
               <li>
-                <SiPostman style={{color: "#F36933"}}/>
+                <SiNodeDotJs style={{ color: "forestgreen" }} />
+                <div>Node.js</div>
+              </li>
+              <li>
+                <SiMongodb style={{ color: "#87BD64" }} />
+                <div>MongoDB</div>
+              </li>
+              <li>
+                <SiPostman style={{ color: "#F36933" }} />
                 <div>Postman</div>
               </li>
               <li>
-                <SiMysql style={{color: "#DD8904"}}/>
+                <SiMysql style={{ color: "#DD8904" }} />
                 <div>MySQL</div>
               </li>
               <li>
-                <SiPostgresql style={{color: "#32648C"}}/>
+                <SiPostgresql style={{ color: "#32648C" }} />
                 <div>Postgresql</div>
               </li>
               <li>
-                <SiGithub style={{color: "black"}}/>
+                <SiGithub style={{ color: "black" }} />
                 <div>Github</div>
               </li>
               <li>
-                <SiFirebase style={{color: "red"}}/>
+                <SiFirebase style={{ color: "red" }} />
                 <div>Firebase</div>
-              </li>
-              <li>
-                <SiNodeDotJs style={{color: "forestgreen"}}/>
-                <div>Node.js</div>
               </li>
             </ul>
           </Backend>
         </Tech>
-        
       </Main>
     </>
   );
