@@ -45,13 +45,10 @@ const Main = styled.div`
   width: 80%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   margin: 0 auto;
-  padding: 0 20px;
+  // padding: 0 20px;
   text-align: center;
   background: white;
-
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
+  // justify-content: center;
 `;
 const Tech = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300&display=swap");
@@ -106,8 +103,8 @@ const Exp = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: center;
-  padding: 20px;
+  // padding: 20px;
+  justify-content: center;
   h4 {
     font-size: 1.4rem;
   }
@@ -128,45 +125,51 @@ const Skills = styled.div`
 `;
 const Edu = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
   
   div {
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
-    width: 45%;
     justify-content: center
-    margin: 10px;
+    margin: 200px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 20px;
+    width: 70%;
     p {
-     
+     font-size: 1rem;
     }
     h6 {
-      font-size: 1.5em;
+      font-size: 1rem;
       margin-bottom: 20px;
     h3 {
-      // width: 90%;
+      font-size: 1rem;
 
     }
     
-    @media only screen and (max-width: 600px) {
-      width: 100%;
-      text-align: center;
-      align-items: center;
-      h3  {
-        font-size 1em;
-      }
-      h6  {
-        font-size 1em;
-      }
-    }
+    // @media only screen and (max-width: 600px) {
+    //   width: 100%;
+    //   text-align: center;
+    //   align-items: center;
+    //   div {
+    //     width: 45%;
+    //   }
+    //   h3  {
+    //     font-size 1em;
+    //   }
+    //   h6  {
+    //     font-size 1em;
+    //   }
+    // }
   }
   img {
-    max-width: 200px;
+    max-width: 120px;
     padding: 20px;
-    margin: 0 auto;
   }
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;  }
+  // @media only screen and (max-width: 600px) {
+  //   flex-direction: column;  }
 
 `;
 
@@ -191,6 +194,22 @@ const Technology = () => {
 
           <Edu>
             <div>
+              <img src={Flatiron}></img>
+              <h3>Certification: Full Stack Developer</h3>
+
+              <p>
+                15 week Immersive on campus course where we studied
+                Object-oriented and Functional programming. This allowed us to
+                create complex, functional web applications from scratch. We
+                accomplished this by learning to build our own databases with
+                Ruby on Rails and integrating productive, scalable front-ends
+                with React.js.{" "}
+              </p>
+              <h6> Awards & Recognition</h6>
+              <p>Flatiron School Merit Scholar</p>
+              <p>John Stanley Ford Fellowship</p>
+            </div>
+            <div>
               <img src={Udacity}></img>
               <h6>Certification: Frontend Nanodegree</h6>
               <p>
@@ -209,20 +228,13 @@ const Technology = () => {
               </p>
             </div>
             <div>
-              <img src={Flatiron}></img>
-              <h6>Certification: Full Stack Developer</h6>
+              <img src={Udacity}></img>
 
+              <h6>Currently Enrolled: Cloud Developer</h6>
               <p>
-                15 week Immersive on campus course where we studied
-                Object-oriented and Functional programming. This allowed us to
-                create complex, functional web applications from scratch. We
-                accomplished this by learning to build our own databases with
-                Ruby on Rails and integrating productive, scalable front-ends
-                with React.js.{" "}
+                Cloud development and deployment with AWS, microservices,
+                Kubernetes clusters, and serverless application technology.
               </p>
-              <h3> Awards & Recognition</h3>
-              <p>Flatiron School Merit Scholar</p>
-              <p>John Stanley Ford Fellowship</p>
             </div>
           </Edu>
         </Exp>

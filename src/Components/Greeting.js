@@ -24,13 +24,14 @@ const Greeting = styled.div`
     font-family: "Poppins", sans-serif;
     color: #0099ff;
   }
-  h2 {
+  h3,
+  h4 {
     font-family: "Poppins", sans-serif;
     color: white;
     span {
       color: #0099ff;
     }
-    font-size: 1.7rem;
+    // font-size: 1.5rem;
   }
 `;
 const Intro = styled.div`
@@ -38,12 +39,10 @@ const Intro = styled.div`
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   color: #97d8b2;
-  // margin: 10px auto;
-  font-size: 1rem;
   width: 50%;
   span {
     color: #0099ff;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   p {
     font-family: "Poppins", sans-serif;
@@ -75,7 +74,7 @@ const WorkContainer = styled.div`
 `;
 
 const workLink = {
-  "font-size": "1.5em",
+  "font-size": "1rem",
   color: "white",
   cursor: "pointer",
 };
@@ -85,18 +84,19 @@ const Main = () => {
     <Greeting id="top">
       <Typing speed={20}>
         <Intro>
-          <h2>Hi, </h2>
+          <h3>Hi, </h3>
           <Typing.Delay ms={1000} />
 
-          <h2>
-            My name is <span>Kevin Sage.</span>
-          </h2>
+          <h3>
+            My name is{" "}
+            <span style={{ "font-size": "1.7rem" }}>Kevin Sage.</span>
+          </h3>
           <Typing.Delay ms={1000} />
 
-          <h2>
+          <h4>
             I specialize in <span>React</span> |{" "}
             <span>Ruby on Rails Development</span>
-          </h2>
+          </h4>
         </Intro>
         <Intro>
           <Typing.Delay ms={1000} />
